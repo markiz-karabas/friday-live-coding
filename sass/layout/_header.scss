@@ -1,0 +1,48 @@
+.header {
+    background-color: rgba(152, 148, 148, 0.123);
+    box-shadow:rgba(0, 0, 0, 0.119)0px 4px 20px;
+}
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto; 
+}
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+}
+.logo {
+
+}
+.logo-link {
+}
+.logo-img {
+}
+.header__menu {
+
+}
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    width: 303px;
+
+}
+.menu__item {
+    display: block;
+    width: 105px;
+}
+.menu__item + .menu__item {
+    margin-right: 14px;
+    padding: 11px auto;
+}
+.menu__link {
+    
+}
+.signin__box {
+    display: flex;
+    justify-content: space-between;
+}
+.sigin__btn {
+}

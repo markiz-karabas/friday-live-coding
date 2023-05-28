@@ -1,0 +1,65 @@
+.strategies {
+    
+}
+.strategies__wrapper {
+
+}
+.strategies__title {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    color: #2F281E;
+
+}
+.strategies__description {
+    margin-top: 14px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #544837;
+}
+.strategies__tag-box {
+    display: flex;
+    justify-content: start;
+    margin-top: 29px;
+}
+.tag__item {
+}
+.teg__selected {
+}
+.teg__bordered {
+}
+
+.strategies__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.strategies__cards-item {
+    flex-direction: column;
+    width: 377px;
+}
+.cards-shadowed {
+
+}
+.strategies__cards-img {
+    height: 200px;
+    width: 377px;
+}
+.strategies__cards-title {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #2F281E;
+}
+
+.strategies__cards__tag-box {
+    margin-top: 29px;
+}
+.cards__tag-item {
+}
+.card-shadowed {
+}

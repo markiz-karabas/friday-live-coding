@@ -1,0 +1,15 @@
+@import "./abstract/const";
+//base
+@import "../css/reset.css";
+@import "./base/base";
+@import "./base/buttons";
+//layout
+@import "./layout/container";
+@import "./layout/header";
+//components
+@import "./components/contacts";
+@import "./components/promo";
+@import "./components/strategies";
+@import "./components/tools";
+@import "./components/about";
+@import "./components/footer"

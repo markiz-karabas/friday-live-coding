@@ -1,0 +1,21 @@
+{
+  "name": "friday-live-coding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "style": "sass --watch sass/style.scss css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markiz-karabas/friday-live-coding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markiz-karabas/friday-live-coding/issues"
+  },
+  "homepage": "https://github.com/markiz-karabas/friday-live-coding#readme"
+}

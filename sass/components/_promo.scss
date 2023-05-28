@@ -1,0 +1,45 @@
+.promo {
+    background-color: rgba(152, 148, 148, 0.123);
+}
+
+.promo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 495px;
+    position: relative;
+}
+.promo__text-content {
+    margin-top: 130px;
+    width: 486px;
+}
+.promo__title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.23;
+    color: #2F281E;
+}
+.promo__text {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    margin-top: 30px;
+    color: #544837;
+
+}
+.promo__btn-box {
+    margin-top: 56px;
+}
+.promo__btn {
+    margin-right: 44px;
+}
+.promo__btn-link {
+}
+.icon {
+}
+.icon-play {
+}
+.promo__img {
+    width: 50%;
+}

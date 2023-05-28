@@ -1,0 +1,24 @@
+.promo__btn,
+.sign__btn {
+    padding: 11px 25px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: $color-btn;
+    border: 1px solid #BCD0E5;
+    background-color: rgba(152, 148, 148, 0.123);
+    border-radius: 4px;
+}
+.sign__btn + .sign__btn {
+    margin-left: 14px;
+}
+.sign__btn:hover,
+.btn--activ {
+    border: 1px solid $color-primary;
+    background-color: $color-primary;
+    color: #fff;
+    transition: all 0.6s;
+}
+
