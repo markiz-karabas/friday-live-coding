@@ -1,0 +1,35 @@
+.hero {
+    background-color: $color-bg;
+}
+.hero__wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 5rem 0 6rem;
+    min-height: 495px;
+}
+.hero__text-content {
+    margin-top: 130px;
+    width: 486px;
+}
+.hero__title {
+    color: $color-heading;
+    @extend %font-additional;
+    @include font(4.4rem, 1.2, 700);
+}
+.hero__text {
+    color: $color-text;
+    margin-top: 3rem;
+    @extend %font-additional;
+    @include font(1.8rem, 1.5);
+}
+.hero__btn-box {
+    margin-top: 5.6rem;
+}
+.hero__btn {
+    margin-right: 44px;
+}
+.hero__img {
+    width: 50%;
+    margin-bottom: 2.4rem;
+}

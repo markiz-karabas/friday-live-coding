@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     
     <title>Productly</title>
@@ -17,49 +17,51 @@
         <div class="container"> 
             <div class="header__wrapper">
                 <div class="logo">
-                    <a href="#" class="logo-link">
-                        <img src="./assets/img/Logo.svg" alt="logo" class="logo-img">
+                    <a class="logo__link" href="#">
+                        <object class="logo__obj" type="image/svg+xml" data="./assets/img/Logo.svg">
+                            Your browser does not support SVG
+                        </object>
                     </a>
                 </div>
                 <nav class="header__menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="" class="menu__link">Home</a>
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link menu-link" href="">Home</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">Services</a>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link menu-link" href="">Services</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">About</a>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link menu-link" href="">About</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">Product</a>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link menu-link" href="">Product</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="signin__box">
-                    <button class="sign__btn">Sign In</button>
-                    <button class="sign__btn btn--activ">Sign Up</button>
+                <div class="signin-box">
+                    <button class="button sign__btn">Sign In</button>
+                    <button class="button button--active sign__btn">Sign Up</button>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="promo">
+        <section class="hero">
             <div class="container">
-                <div class="promo__wrapper">
-                    <div class="promo__text-content">
-                        <h1 class="promo__title">The Design Thinking superpowers</h1>
-                        <p class="promo__text">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
-                        <div class="promo__btn-box">
-                            <buttton class="btn--activ promo__btn">Get started</buttton>
-                            <a class="promo__btn-link">
+                <div class="hero__wrapper layout-2-colomn">
+                    <div class="hero__text-content">
+                        <h1 class="hero__title">The Design Thinking superpowers</h1>
+                        <p class="hero__text">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+                        <div class="hero__btn-box">
+                            <buttton class="button button--active hero__btn">Get started</buttton>
+                            <a class="hero__btn-link btn-link">
                                 <span class="icon icon-play"></span> <!--для иконки, лучше чем использовать :befor-->
                                 Watch the Video
                             </a>
                         </div>
                     </div>
-                    <img src="./assets/img/Prototyping process-cuate.svg" alt="team-bro" class="promo__img">
+                    <img class="hero__img" src="./assets/img/hero/Group.svg" alt="hero-img">
                 </div>
             </div>
         </section>
@@ -67,29 +69,30 @@
             <div class="container">
                 <div class="tools__wrapper">
                     <h2 class="tools__title">We design tools to unveil your superpowers</h2>
-                    <div class="tools__cards-box">
-                        <div class="tools__cards-item">
-                            <img src="./assets/icons/icon-click.svg" alt="icon" class="cards__icon">
-                            <h4 class="cards__title">First click tests</h4>
-                            <p class="cards__text">While most people enjoy casino gambling,</p>                            
+                    <div class="tools__cards-box layout-4-columns">
+                        <div class="tools__item card">
+                            <img class="card__icon" src="./assets/icons/icon-click.svg" alt="icon">
+
+                            <h4 class="card__title">First click tests</h4>
+                            <p class="card__text">While most people enjoy casino gambling,</p>                            
                         </div>
-                        <div class="tools__cards-item">
-                            <img src="./assets/icons/icon-surveys.svg" alt="icon" class="cards__icon">
-                            <h4 class="cards__title">Design surveys</h4>
-                            <p class="cards__text">Sports betting, lottery and bingo playing for the fun</p>
+                        <div class="tools__item card">
+                            <img class="card__icon" src="./assets/icons/icon-surveys.svg" alt="icon">
+                            <h4 class="card__title">Design surveys</h4>
+                            <p class="card__text">Sports betting, lottery and bingo playing for the fun</p>
                         </div>
-                        <div class="tools__cards-item">
-                            <img src="./assets/icons/icon-preference.svg" alt="icon" class="cards__icon">
-                            <h4 class="cards__title">Preference tests</h4>
-                            <p class="cards__text">The Myspace page defines the individual.</p>
+                        <div class="tools__item card">
+                            <img class="card__icon" src="./assets/icons/icon-preference.svg" alt="icon">
+                            <h4 class="card__title">Preference tests</h4>
+                            <p class="card__text">The Myspace page defines the individual.</p>
                         </div>
-                        <div class="tools__cards-item">
-                            <img src="./assets/icons/icon-seconds.svg" alt="icon" class="cards__icon">
-                            <h4 class="cards__title">Five second tests</h4>
-                            <p class="cards__text">Personal choices and the overall personality of the person.</p>
+                        <div class="tools__item card">
+                            <img class="card__icon" src="./assets/icons/icon-seconds.svg" alt="icon">
+                            <h4 class="card__title">Five second tests</h4>
+                            <p class="card__text">Personal choices and the overall personality of the person.</p>
                         </div>
                     </div>
-                    <button class="tools__btn">Sign Up now</button>
+                    <button class="button button--active tools__btn">Sign Up now</button>
                 </div>
             </div>
         </section>
@@ -98,72 +101,149 @@
                 <div class="strategies__wrapper">
                     <h2 class="strategies__title">Marketing Strategies</h2>
                     <p class="strategies__description">Join 40,000+ other marketers and get proven strategies on email marketing</p>
-                    <div class="strategies__tag-box">
-                        <span class="tag__item teg__selected">All</span>
-                        <span class="tag__item teg__bordered">Art</span>
-                        <span class="tag__item teg__bordered">Culture</span>
-                        <span class="tag__item teg__bordered">Design</span>
+                    <div class="strategies__tag-box tag-box">
+                        <span class="tag__item tag tag--selected">All</span>
+                        <span class="tag__item tag tag--bordered">Art</span>
+                        <span class="tag__item tag tag--bordered">Culture</span>
+                        <span class="tag__item tag tag--bordered">Design</span>
                     </div>
-                    <div class="strategies__cards">
-                        <div class="strategies__cards-item cards-shadowed">
-                            <img src="./assets/img/content14 (2).jpg" alt="" class="strategies__cards-img">
-                            <h3 class="strategies__cards-title">Increasing Prosperity With Positive Thinking</h3>
-                            <div class="strategies__cards__tag-box">
-                                <span class="cards__tag-item teg__selected">Art</span>
-                                <span class="cards__tag-item teg__bordered">Design</span>
+                    <div class="strategies__box layout-3-columns">
+                        <div class="strategies__card card-shadowed">
+                            <img class="strategies__card-img" src="./assets/img/strategies/str-1.jpg" alt="">
+                            <div class="strategies__card-content">
+                                <h3 class="strategies__card-title">Good way to generate leads that make easy</h3>
+                                <div class="strategies__card-tags tag-box">
+                                    <span class="tag-box__item tag tag--colored">Art</span>
+                                    <span class="tag-box__item tag tag--colored">Design</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="strategies__cards-item card-shadowed">
-                            <img src="./assets/img/content18 (2).jpg" alt="" class="strategies__cards-img">
-                            <h3 class="strategies__cards-title">Motivation Is The First Step To Success</h3>
-                            <div class="strategies__cards__tag-box">
-                                <span class="cards__tag-item teg__selected">Art</span>
-                                <span class="cards__tag-item teg__bordered">Design</span>
+                        <div class="strategies__card card-shadowed">
+                            <img class="strategies__card-img" src="./assets/img/strategies/str-2.jpg" alt="">
+                            <div class="strategies__card-content">
+                                <h3 class="strategies__card-title">Twice profit than befor you ever got</h3>
+                                <div class="strategies__card-tags tag-box">
+                                    <span class="tag-box__item tag tag--colored">Art</span>
+                                    <span class="tag-box__item tag tag--colored">Design</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="strategies__cards-item cards-shadowed">
-                            <img src="./assets/img/content24 (2).jpg" alt="" class="strategies__cards-img">
-                            <h3 class="strategies__cards-title">Success Steps For Your Personal Or Business Life</h3>
-                            <div class="strategies__cards__tag-box">
-                                <span class="cards__tag-item teg__selected">Art</span>
-                                <span class="cards__tag-item teg__bordered">Design</span>
+                        <div class="strategies__card card-shadowed">
+                            <img class="strategies__card-img" src="./assets/img/strategies/str-3.jpg" alt="">
+                            <div class="strategies__card-content">
+                                <h3 class="strategies__card-title">Security risks of chang package owners</h3>
+                                <div class="strategies__card-tags tag-box">
+                                    <span class="tag-box__item tag tag--colored">Art</span>
+                                    <span class="tag-box__item tag tag--colored">Design</span>
+                                </div>
                             </div>
                         </div>
-
-                        
+                        <div class="strategies__card card-shadowed">
+                            <img class="strategies__card-img" src="./assets/img/strategies/str-4.jpg" alt="">
+                        <div class="strategies__card-content">
+                            <h3 class="strategies__card-title">E-mail Marketing</h3>
+                            <div class="strategies__card-tags tag-box">
+                                <span class="tag-box__item tag tag--colored">Art</span>
+                                <span class="tag-box__item tag tag--colored">Design</span>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="strategies__card card-shadowed">
+                            <img class="strategies__card-img" src="./assets/img/strategies/str-5.jpg" alt="">
+                            <div class="strategies__card-content">
+                                <h3 class="strategies__card-title">Page Ranking</h3>
+                                <div class="strategies__card-tags tag-box">
+                                    <span class="tag-box__item tag tag--colored">Art</span>
+                                    <span class="tag-box__item tag tag--colored">Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategies__card card-shadowed">
+                            <img class="strategies__card-img" src="./assets/img/strategies/str-6.jpg" alt="">
+                            <div class="strategies__card-content">
+                                <h3 class="strategies__card-title">Target Advertising</h3>
+                                <div class="strategies__card-tags tag-box">
+                                    <span class="tag-box__item tag tag--colored">Art</span>
+                                    <span class="tag-box__item tag tag--colored">Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategies__card card-shadowed">
+                            <img class="strategies__card-img" src="./assets/img/strategies/str-7.jpg" alt="">
+                            <div class="strategies__card-content">
+                                <h3 class="strategies__card-title">Increasing Prosperity With Positive Thinking</h3>
+                                <div class="strategies__card-tags tag-box">
+                                    <span class="tag-box__item tag tag--colored">Art</span>
+                                    <span class="tag-box__item tag tag--colored">Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategies__card card-shadowed">
+                            <img class="strategies__card-img" src="./assets/img/strategies/str-3.jpg" alt="">
+                            <div class="strategies__card-content">
+                                <h3 class="strategies__card-title">Motivation Is The First Step To Success</h3>
+                                <div class="strategies__card-tags tag-box">
+                                    <span class="tag-box__item tag tag--colored">Art</span>
+                                    <span class="tag-box__item tag tag--colored">Design</span>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="strategies__card card-shadowed">
+                            <img class="strategies__card-img" src="./assets/img/strategies/str-4.jpg" alt="">
+                            <div class="strategies__card-content">
+                                <h3 class="strategies__card-title">Success Steps For Your Personal Or Business Life</h3>
+                                <div class="strategies__card-tags tag-box">
+                                    <span class="tag-box__item tag tag--colored">Art</span>
+                                    <span class="tag-box__item tag tag--colored">Design</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="start-business">
+            <div class="container">
+                <div class="start-business__wrapper layout-2-colomn">
+                    <img class="start-business__img" src="./assets/img/start-business/" alt="business-img">
+                    <div class="start-business__text-content">
+                        <h2 class="start-business__title">Over 12 years Productly helping companies to reach their financical and branding goals</h2>
+                        <p class="start-business__text">Over the years, we have worked with Fortune 500, and brand-new startaps. We help ambitions business like yours generate more profits by building awareness, driving web traffic, connecting with costomers, and growing overall sales. Give us a call.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="about-us">
             <div class="container">
                 <div class="about-us__wrapper">
                     <h2 class="about-us__title">About Us</h2>
                     <p class="about-us__text">Your About Us page is vital. It’s often the first stop in any user’s journey through a website or blog. It also shouldn’t be their last, because first impressions count online just as much as they do in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your awesome content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).</p>
-                    <div class="about-us__card-box">
-                        <div class="about-us__card-item card-shadowed">
-                            <div class="emploee-info">
-                                <h5 class="employee__name">Kathy Rosenberg</h5>
-                                <p class="employee__position">Product Mannager</p>
-                                <a href="mailto:kathyr@gmail.com" class="employee__mail">kathyr@gmail.com</a>
+                    <div class="about-us__card-box layout-3-columns">
+                        <div class="about-us__item card-team card-shadowed">
+                            <div class="card-team__info">
+                                <h5 class="about-us__employee-name">Kathy Rosenberg</h5>
+                                <p class="about-us__employee-position">Product Mannager</p>
+                                <a class="about-us__employee-mail" href="mailto:kathyr@gmail.com">kathyr@gmail.com</a>
                             </div>
-                            <img src="./assets/avators/Avator-1.png" alt="" class="emploee__avatar">
+                            <img class="card-team__avatar" src="./assets/img/team/ava-1.jpg" alt="product-manager">
                         </div>
-                        <div class="about-us__card-item card-shadowed">
-                            <div class="emploee-info">
-                                <h5 class="employee__name">Alexandra Boyarskaya</h5>
-                                <p class="employee__position">Support Marketing Specialist</p>
-                                <a href="mailto:alexandrab@gmail.com" class="employee__mail">alexandrab@gmail.com</a>
+                        <div class="about-us__item card-team card-shadowed">
+                            <div class="card-team__info">
+                                <h5 class="about-us__employee-name">Alexandra Boyarskaya</h5>
+                                <p class="about-us__employee-position">Marketing Specialist</p>
+                                <a class="about-us__employee-mail" href="mailto:alexandrab@gmail.com">alexandrab@gmail.com</a>
                             </div>
-                            <img src="./assets/avators/Avator-2.png" alt="" class="emploee__avatar">
+                            <img class="card-team__avatar" src="./assets/img/team/ava-2.jpg" alt="markting-manager">
                         </div>
-                        <div class="about-us__card-item card-shadowed">
-                            <div class="emploee-info">
-                                <h5 class="employee__name">Melani Amini</h5>
-                                <p class="employee__position">Photographer</p>
-                                <a href="mailto:melania@gmail.com" class="employee__mail">melania@gmail.com</a>
+                        <div class="about-us__item card-team card-shadowed">
+                            <div class="card-team__info">
+                                <h5 class="about-us__employee-name">Melani Amini</h5>
+                                <p class="about-us__employee-position">Photographer</p>
+                                <a class="about-us__employee-mail" href="mailto:melania@gmail.com">melania@gmail.com</a>
                             </div>
-                            <img src="./assets/avators/Avator-3.png" alt="" class="emploee__avatar">
+                            <img class="card-team__avatar" src="./assets/img/team/ava-3.jpg" alt="photographer">
                         </div>
                     </div>
                 </div>
@@ -171,34 +251,35 @@
         </section>
         <section class="contacts">
             <div class="container">
-                <div class="contacts__wrapper">
-                    <div class="contacts__info layout-2-column">
+                <div class="contacts__wrapper layout-2-colomns">
+                    <div class="contacts__info">
                         <h2 class="contacts__title">Contact Us</h2>
                         <p class="contacts__text">Your About Us page is vital. It’s often the first stop in any user’s journey through a website or blog. It also shouldn’t be their last, because first impressions count online just as much as they do in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your awesome content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).</p>
-                        <div class="contacts__phon">
+                        <div class="contacts__phone">
                             <span class="icon icon-phone"></span>
-                            <a href="" class="phone-link">+375 (22) 345-00-99</a>
+                            <a class="phone-link" href="">+375 (22) 345-00-99</a>
                         </div>
-                        <div class="contacts__phon">
+                        <div class="contacts__email">
                             <span class="icon icon-email"></span>
-                            <a href="" class="email-link">emailname@gmail.com</a>
+                            <a class="email-link" href="" >emailname@gmail.com</a>
                         </div>
                     </div>
                     <div class="contact__form-box">
-                        <form action method="post" class="contacts__form">
-                            <div class="layout-2-column">
+                        <form class="contacts__form" action method="post" >
+                            <div class="forms-input layout-2-column">
                                 <input type="text" class="input-name" name="name" placeholder="Your name">
                                 <input type="text" class="input-email" name="email" placeholder="Your email">
                             </div>
-                            <textarea name="quastion" id="" cols="30" rows="10" placeholder="What do you want to ask?"></textarea>
+                            <textarea class="contacts__textarea" name="question" id="" cols="30" rows="10" placeholder="What do you want to ask?"></textarea>
                             <div class="contact__form-btn">
-                                <button type="submit" class="send-btn colored-btn">Send</button>
+                                <button class="send-btn button button--active" type="submit" >Send</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
     <footer class="footer">
         <div class="container">
@@ -207,54 +288,54 @@
                     <img src="./assets/img/Logo.svg" alt="" class="logo-img">
                 </div>
                 <div class="footer__menu">
-                    <div class= "footer__menu-item">
-                        <h4 class="menu__item-title">Quick Links</h4>
+                    <div class= "footer__menu-box">
+                        <h4 class="footer__menu-title">Quick Links</h4>
                         <ul class="footer__menu-list">
-                            <li class="footer__menu-list__item">
-                                <a href="" class="footer__menu-link">About Us</a>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link menu-link" href="">About Us</a>
                             </li>
-                            <li class="footer__menu-list__item">
-                                <a href="" class="footer__menu-link">Blog</a>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link menu-link" href="">Blog</a>
                             </li>
-                            <li class="footer__menu-list__item">
-                                <a href="" class="footer__menu-link">Contact</a>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link menu-link" href="">Contact</a>
                             </li>
-                            <li class="footer__menu-list__item">
-                                <a href="" class="footer__menu-link">FAQ</a>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link menu-link" href="">FAQ</a>
                             </li>
                         </ul>
                     </div>
-                    <div class= "footer__menu-item">
-                        <h4 class="menu__item-title">Legal Stuff</h4>
+                    <div class= "footer__menu-box">
+                        <h4 class="footer__menu-title">Legal Stuff</h4>
                         <ul class="footer__menu-list">
-                            <li class="footer__menu-list__item">
-                                <a href="" class="footer__menu-link">Disclaimer</a>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link menu-link" href="">Disclaimer</a>
                             </li>
-                            <li class="footer__menu-list__item">
-                                <a href="" class="footer__menu-link">Financing</a>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link menu-link" href="">Financing</a>
                             </li>
-                            <li class="footer__menu-list__item">
-                                <a href="" class="footer__menu-link">Privacy Policy</a>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link menu-link" href="">Privacy Policy</a>
                             </li>
-                            <li class="footer__menu-list__item">
-                                <a href="" class="footer__menu-link">Terms of Service</a>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link menu-link" href="">Terms of Service</a>
                             </li>
                         </ul>
                     </div>
-                    <div class= "footer__menu-item">
-                        <h4 class="menu__item-title">Quick Links</h4>
+                    <div class= "footer__menu-box">
+                        <h4 class="footer__menu-title">Resources</h4>
                         <ul class="footer__menu-list">
-                            <li class="footer__menu-list__item">
-                                <a href="" class="footer__menu-link">About Us</a>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link menu-link" href="">Job Opportunities</a>
                             </li>
-                            <li class="footer__menu-list__item">
-                                <a href="" class="footer__menu-link">Blog</a>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link menu-link" href="">Pricing Plan</a>
                             </li>
-                            <li class="footer__menu-list__item">
-                                <a href="" class="footer__menu-link">Contact</a>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link menu-link" href="">Testimonials</a>
                             </li>
-                            <li class="footer__menu-list__item">
-                                <a href="" class="footer__menu-link">FAQ</a>
+                            <li class="footer__menu-item menu-link">
+                                <a class="footer__menu-link" href="">Support Center</a>
                             </li>
                         </ul>
                     </div>

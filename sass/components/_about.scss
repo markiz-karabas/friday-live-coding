@@ -1,44 +1,33 @@
+$ava-gap: -40px;
 .about-us {
-    
+    //background-color: $color-light;
 }
 .about-us__wrapper {
-    padding: 96px 0px
-}
-.about-us__title {
-    font-family: 'Open Sans';
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 46px;
-    color: #2F281E;
+    padding: 60px 0px 120px;
 }
 .about-us__text {
+    color: $color-text;
     margin-top: 14px;
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #544837;
+    @include font(1.6rem, 1.6)
 }
 .about-us__card-box {
     display: flex;
     justify-content: space-between;
     margin-top: 45px;
+    width: 97%; // сдвигаем контент, чтоб поместить дизайн аватарок
 }
-.about-us__card-item {
-
+.card-team {
+    background-color: $color-light;
+    padding: 40px 25px;
+    position: relative;
+    max-width: 28%;
+    filter: drop-shadow(0px 4px 10px rgba(52, 46, 46, 0.2));
+    border-radius: 10px;
 }
-.card-shadowed {
-    display: flex;
-    justify-content: space-between;
-}
-.emploee-info {
-
-}
-.employee__name {
-}
-.employee__position {
-}
-.employee__mail {
-}
-.emploee__avatar {
+.card-team__avatar {
+    @include avatar(120px, 120px);
+    position: absolute;
+    right: $ava-gap;
+    top: 18px;
+    filter: drop-shadow(0px 4px 10px rgba(14, 14, 14, 0.2));
 }

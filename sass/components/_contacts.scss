@@ -1,5 +1,5 @@
 .contacts {
-    background-color: $color-bg;
+    background-color: rgba(152, 148, 148, 0.221);
 }
 .contacts__wrapper {
     display: flex;
@@ -10,6 +10,7 @@
     width: 50%;
 }
 .layout-2-column {
+    
 }
 .contacts__title {
     font-family: 'Open Sans';
@@ -19,7 +20,7 @@
     color: #2F281E;
 }
 .contacts__text {
-    margin: 14px 0 33px;
+    margin: 14px 0 20px;
     max-width: 528px;
     font-family: 'Open Sans';
     font-weight: 400;
@@ -27,28 +28,56 @@
     line-height: 1.6;
     color: #544837;
 }
-.contacts__phon {
 
-}
-.icon {
-}
-.icon-phone {
-}
-.phone-link {
+.phone-link, .email-link {
+    font-size: 26px;
+    padding-top: 10px;
 }
 .icon-email {
+    background-image: url(../../assets/icons/ico-mail.svg);
+    margin-right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 .email-link {
+    
 }
+
+    
 .contact__form-box {
+    >* {
+        
+    }
 }
 .contacts__form {
+    .input-name,
+    .input-email,
+    .contacts__textarea {
+        border: none;
+        background-color: #fff;
+        padding: 10px 21px;
+        border-radius: 8px;
+        &:focus {
+            border: 1px solid $color-primary;
+            outline: none;
+        }
+    }
 }
 .input-name {
+    margin-right: 10px;
 }
-.input-email {
+.contacts__textarea {
+    resize: none;
+    width: 100%;
+    margin-top: 30px;
+    height: 160px;
 }
+
 .contact__form-btn {
+    margin-top: 30px;
+    >* {
+        min-width: 117px;
+    }
 }
 .send-btn {
 }

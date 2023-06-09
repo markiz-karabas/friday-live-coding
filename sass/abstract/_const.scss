@@ -1,8 +1,9 @@
 $color-primary: #FF9900;
-$color-primary-activ: #FF7549;
-$color-bg: #FFEEE1;
+$color-primary-active: #FF7549;
+$color-bg: rgba(152, 148, 148, 0.123);
+$color-light: #f4f4f4;
 $color-link: #1943EF;
-$color-tag-bg: #F5F5F5;
+$color-tag-bg: #e3e3e3;
 $color-text: #544837;
 $color-heading: #2F281E;
 $color-border: #D7D7D7;
@@ -14,3 +15,7 @@ $color-red: #F03E3D;
 $color-blue: #4DADF7;
 
 $content-width: 1200px;
+$laptop-width: 1920px;
+$tablet-width: 768px;
+$mobile-XL-width: 414px;
+$mobile-S-width: 320px;

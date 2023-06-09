@@ -1,65 +1,53 @@
 .strategies {
-    
+    //background-color: $color-bg;
 }
 .strategies__wrapper {
-
+    padding: 60px 0;
 }
-.strategies__title {
-    font-family: 'Open Sans';
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 46px;
-    color: #2F281E;
-
+.strategies__box {
+    >* {
+        margin-bottom: 30px;
+    }
 }
 .strategies__description {
-    margin-top: 14px;
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #544837;
+    color: $color-text;
+    margin-top: 30px;
+    @include font($height: 1.6);
 }
 .strategies__tag-box {
     display: flex;
     justify-content: start;
     margin-top: 29px;
 }
-.tag__item {
-}
-.teg__selected {
-}
-.teg__bordered {
-}
-
-.strategies__cards {
+.strategies__box {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
-.strategies__cards-item {
+.strategies__card {
     flex-direction: column;
-    width: 377px;
+    background-color: $color-light;
+    max-width: 377px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    filter: drop-shadow(0px 4px 4px rgba(158, 156, 156, 0.2));
 }
-.cards-shadowed {
-
+.strategies__card-content {
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 25px 34px;
 }
-.strategies__cards-img {
+.strategies__card-img {
     height: 200px;
     width: 377px;
 }
-.strategies__cards-title {
-    font-family: 'Open Sans';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.4;
-    color: #2F281E;
+.strategies__card-title {
+    margin-bottom: 26px;
 }
-
 .strategies__cards__tag-box {
-    margin-top: 29px;
+    margin-bottom: 0;
 }
 .cards__tag-item {
-}
-.card-shadowed {
+    margin-top: 20px;
 }

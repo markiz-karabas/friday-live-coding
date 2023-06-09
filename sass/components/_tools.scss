@@ -1,48 +1,39 @@
 .tools {
-    background-color: rgba(152, 148, 148, 0.123);
-    /*box-shadow:rgba(0, 0, 0, 0.119)0px 4px 20px;*/
+    //background-color: $color-bg;
 }
 .tools__wrapper {
     padding: 60px 0 90px;
+    background-image: url(../../assets/bg/Bg-tools.svg);
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .tools__title {
     max-width: 462px;
     margin: 0 auto;
-    font-family: 'Open Sans';
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 46px;
     text-align: center;
-    color: #2F281E;
 }
 .tools__cards-box {
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 100px;
 }
-.tools__cards-item {
-    width: 262px;
+.tools__item {
+    padding: 15px;
+    @extend %card-style;
 }
-.cards__icon {
+.card__icon {
     width: 50px;
     height: 50px;
 }
-.cards__title {
-    font-family: 'Open Sans';
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 30px;
-    margin: 16px 0 30px;
-
-    color: #2F281E;
+.card__title {
+    margin: 16px 0 20px;
 }
-.cards__text {
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #544837;
+.card__text {
+    color: $color-text;
+    @include font($height: 1.6);
 }
 .tools__btn {
-    margin-top: 34px;
+    display: block;
+    margin: 46px auto 0;
 }

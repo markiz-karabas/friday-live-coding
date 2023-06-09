@@ -1,0 +1,31 @@
+.start-business {
+    background-color: $color-light;
+}
+.start-business__wrapper {
+    display: flex;
+    justify-content:space-between;
+    //padding: 80px 0;
+
+}
+.start-business__text-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-end;
+    //padding-left: 50px;
+}
+.start-business__title {
+    text-align: right;
+    margin: 60px 0 30px;
+}
+.start-business__text {
+    margin-bottom: 60px;
+    text-align: right;
+}
+.start-business__btn {
+    align-items: flex-end;
+}
+.start-business__img {
+    width: 50%;
+    height: auto;
+}

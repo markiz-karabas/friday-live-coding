@@ -1,45 +1,31 @@
 .footer {
-}
 
+}
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0;
-}
-.logo {
-
-}
-.logo-img {
-
+    padding: 40px 0 20px;
 }
 .footer__menu {
     display: flex;
     justify-content: start;
     gap: 140px;
     width: 70%;
-
 }
 .footer__menu-item {
     width: max-content;
 }
-.menu__item-title {
-    margin-bottom: 15px;
-    font-family: 'Open Sans';
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.5;
-    color: #2F281E;
+.footer__menu-title {
+    margin-bottom: 10px;
+    color: $color-heading;
+    @include font($size: 2rem, $weigth: 600);
 }
 .footer__menu-list {
 }
 .footer__menu-list__item {
-
 }
 .footer__menu-link {
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 2.2px;
-    color: #544837;
-
+    @include font();
+    @extend %font-additional;
+    color: $color-text;
 }

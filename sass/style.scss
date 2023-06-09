@@ -1,15 +1,24 @@
+//abstract
 @import "./abstract/const";
+@import "./abstract/placeholders";
+@import "./abstract/mixins";
 //base
-@import "../css/reset.css";
 @import "./base/base";
 @import "./base/buttons";
+@import "./base/logo";
+@import "./base/avatars";
+@import "./base/illustration";
+@import "./base/icons";
+@import "./base/tags";
 //layout
 @import "./layout/container";
 @import "./layout/header";
+@import "./layout/layouts";
 //components
 @import "./components/contacts";
-@import "./components/promo";
+@import "./components/hero";
 @import "./components/strategies";
 @import "./components/tools";
 @import "./components/about";
-@import "./components/footer"
+@import "./components/footer";
+@import "./components/business";
