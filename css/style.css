@@ -6,7 +6,7 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.footer__menu-link, .hero__text, .hero__title, .hero__btn-link, h1 {
+.tariff-list__item, .price-card__text, .price-card__title, .start-business__text, .start-business__title, .footer__menu-link, .hero__text, .hero__title, .hero__btn-link, h1 {
   font-family: "Poppins", sans-serif;
 }
 
@@ -14,18 +14,22 @@
   padding: 11px 25px;
   text-align: center;
   color: #173A56;
-  border: 1px solid #BCD0E5;
+  border: 1px solid #D7D7D7;
   background-color: rgba(152, 148, 148, 0.123);
   border-radius: 4px;
 }
+.button:hover {
+  color: #fff;
+  border: 1px solid #455A64;
+}
 
 .button--active {
-  border: 1px solid #FF9900;
-  background-color: #FF9900;
+  border: 1px solid #FFA800;
+  background-color: #FFA800;
   color: #fff;
 }
 
-.tools__item {
+.tools__item, .strategies__card {
   color: #f4f4f4;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.119) 0px 4px 20px;
@@ -94,7 +98,11 @@ a {
 }
 
 a:hover {
-  color: #FF7549;
+  color: #FFA800;
+}
+
+.text-colored {
+  color: #FFA800;
 }
 
 .button {
@@ -104,7 +112,7 @@ a:hover {
   font-style: normal;
 }
 .button:hover {
-  background-color: #FF7549;
+  background-color: #455A64;
 }
 
 .sign__btn + .sign__btn {
@@ -116,13 +124,18 @@ a:hover {
   line-height: 2.6rem;
   font-weight: 600;
   font-style: normal;
-  color: #FF9900;
+  color: #FFA800;
   display: inline-flex;
   align-items: center;
 }
 
+.btn-link:hover {
+  color: #455A64;
+  cursor: pointer;
+}
+
 .logo-svg:hover .logo-path {
-  fill: #FF9900;
+  fill: #FFA800;
 }
 
 .strategies__card-img {
@@ -172,13 +185,14 @@ a:hover {
   font-style: normal;
 }
 .tag--selected {
-  background-color: #FF9900;
+  background-color: #FFA800;
 }
 .tag--bordered {
   border: 1px solid #D7D7D7;
 }
 .tag--colored {
-  background-color: #e3e3e3;
+  background-color: #edecec;
+  color: #544837;
 }
 
 .container {
@@ -206,10 +220,9 @@ a:hover {
 
 .header__menu-item {
   display: block;
-  width: 105px;
 }
 
-.header__menu-item + .header__menu-item {
+.header__menu-item {
   margin-right: 14px;
   padding: 11px auto;
 }
@@ -243,7 +256,7 @@ a:hover {
   flex-wrap: wrap;
 }
 .layout-4-columns > * {
-  flex-basis: 21%;
+  flex-basis: 23%;
 }
 
 .contacts {
@@ -301,7 +314,7 @@ a:hover {
 .contacts__form .input-name:focus,
 .contacts__form .input-email:focus,
 .contacts__form .contacts__textarea:focus {
-  border: 1px solid #FF9900;
+  border: 1px solid #FFA800;
   outline: none;
 }
 
@@ -323,15 +336,11 @@ a:hover {
   min-width: 117px;
 }
 
-.hero {
-  background-color: rgba(152, 148, 148, 0.123);
-}
-
 .hero__wrapper {
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding: 5rem 0 6rem;
+  padding: 3rem 0;
   min-height: 495px;
 }
 
@@ -401,12 +410,9 @@ a:hover {
 
 .strategies__card {
   flex-direction: column;
-  background-color: #f6f6f6;
-  max-width: 377px;
   padding-bottom: 10px;
-  border-radius: 10px;
   overflow: hidden;
-  filter: drop-shadow(0px 4px 4px rgba(158, 156, 156, 0.2));
+  cursor: pointer;
 }
 
 .strategies__card-content {
@@ -417,7 +423,6 @@ a:hover {
 
 .strategies__card-img {
   height: 200px;
-  width: 377px;
 }
 
 .strategies__card-title {
@@ -430,14 +435,15 @@ a:hover {
 
 .cards__tag-item {
   margin-top: 20px;
+  color: #544837;
 }
 
 .tools__wrapper {
-  padding: 60px 0 90px;
-  background-image: url(../../assets/bg/Bg-tools.svg);
+  background-image: url(../../assets/bg/bg-tools.svg);
   background-position: center bottom;
   background-size: 100%;
   background-repeat: no-repeat;
+  padding: 60px 0 90px;
 }
 
 .tools__title {
@@ -476,6 +482,24 @@ a:hover {
 .tools__btn {
   display: block;
   margin: 46px auto 0;
+}
+
+.read-more {
+  position: relative;
+}
+.read-more::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 22px;
+  height: 15px;
+  background-image: url(../../assets/icons/arrow-readmore.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.read-more__link {
+  padding: 14px 30px 10px;
 }
 
 .about-us__wrapper {
@@ -552,10 +576,6 @@ a:hover {
   color: #544837;
 }
 
-.start-business {
-  background-color: #f4f4f4;
-}
-
 .start-business__wrapper {
   display: flex;
   justify-content: space-between;
@@ -564,18 +584,27 @@ a:hover {
 .start-business__text-content {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  justify-content: center;
+  width: 45%;
   align-items: flex-end;
 }
 
 .start-business__title {
-  text-align: right;
-  margin: 60px 0 30px;
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  line-height: 1.6;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .start-business__text {
-  margin-bottom: 60px;
-  text-align: right;
+  text-align: left;
+  color: #544837;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .start-business__btn {
@@ -583,8 +612,81 @@ a:hover {
 }
 
 .start-business__img {
-  width: 50%;
+  padding: 60px 0;
+  width: 45%;
   height: auto;
+}
+
+.price__wrapper {
+  background-image: url(../../assets/bg/bg-price.svg);
+  background-position: center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+}
+
+.price__title {
+  margin-bottom: 10px;
+}
+
+.price__text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.price-card {
+  border: 1px solid #D7D7D7;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  text-align: center;
+}
+.price-card--active, .price-card__title--active {
+  color: #f4f4f4;
+  background-color: #455A64;
+}
+
+.price-card__title {
+  font-size: 2.4rem;
+  line-height: 4;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.price-card__text {
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 16px;
+}
+
+.tariff-box {
+  display: block;
+  height: 100px;
+}
+
+.tariff-list__item {
+  letter-spacing: 0.2px;
+  font-size: 1.6rem;
+  line-height: 2.2;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.order-btn {
+  background-color: #455A64;
+  color: #f4f4f4;
+  border-color: #455A64;
+  margin: 38px auto;
+}
+.order-btn:hover {
+  background-color: #FFA800;
+  color: #f4f4f4;
+  border-color: #FFA800;
+}
+.order-btn--active {
+  color: #455A64;
+  background-color: #f4f4f4;
 }
 
 /*# sourceMappingURL=style.css.map */

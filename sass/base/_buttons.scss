@@ -20,3 +20,7 @@
     display: inline-flex; // вертикальное позиционирование
     align-items: center;
 }
+.btn-link:hover {
+    color: $color-primary-active; // сделать ещё ховер для svg icon-play
+    cursor: pointer;
+}

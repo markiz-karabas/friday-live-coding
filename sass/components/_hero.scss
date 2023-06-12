@@ -1,11 +1,11 @@
 .hero {
-    background-color: $color-bg;
+    //background-color: $color-bg;
 }
 .hero__wrapper {
     display: flex;
     justify-content: space-between;
     position: relative;
-    padding: 5rem 0 6rem;
+    padding: 3rem 0;
     min-height: 495px;
 }
 .hero__text-content {

@@ -1,0 +1,62 @@
+.price {
+
+}
+.price__wrapper {
+    background-image: url(../../assets/bg/bg-price.svg);
+    background-position: center top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+}
+.price__title {
+    margin-bottom: 10px;
+}
+.price__text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.price-card {
+    border: 1px solid $color-border;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    text-align: center;
+    &--active,
+    &__title--active {
+        color: $color-light;
+        background-color: $color-primary-active;
+    }
+}
+.price-card__title {
+    @include font(2.4rem, 4, 700);
+    @extend %font-additional;
+}
+.price-card__text {
+    @include font(1.6rem, 2);
+    @extend %font-additional;   
+    margin-bottom: 16px; 
+}
+.tariff-box {
+    display: block;
+    height: 100px;
+}
+.tariff-list__item {
+    letter-spacing: 0.2px;
+    @include font(1.6rem, 2.2, 500);
+    @extend %font-additional;
+}
+.order-btn {
+    background-color: $color-primary-active;
+    color: $color-light;
+    border-color: $color-primary-active;
+    margin: 38px auto;
+    &:hover {
+        background-color: $color-primary;
+        color: $color-light;
+        border-color: $color-primary;
+        }
+    &--active {
+        color: $color-primary-active;
+        background-color: $color-light;
+    }
+}

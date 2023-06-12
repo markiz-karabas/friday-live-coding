@@ -11,9 +11,13 @@
     padding: 11px 25px;
     text-align: center;
     color: $color-btn;
-    border: 1px solid #BCD0E5;
+    border: 1px solid $color-border;
     background-color: rgba(152, 148, 148, 0.123);
     border-radius: 4px;
+    &:hover {
+        color: #fff;
+        border: 1px solid $color-primary-active;
+    }
 }
 %btn-active-style {
     border: 1px solid $color-primary;

@@ -1,12 +1,15 @@
 .tools {
     //background-color: $color-bg;
+
 }
 .tools__wrapper {
-    padding: 60px 0 90px;
-    background-image: url(../../assets/bg/Bg-tools.svg);
+    background-image: url(../../assets/bg/bg-tools.svg);
     background-position: center bottom;
     background-size: 100%;
     background-repeat: no-repeat;
+    padding: 60px 0 90px;
+
+
 }
 .tools__title {
     max-width: 462px;
@@ -36,4 +39,21 @@
 .tools__btn {
     display: block;
     margin: 46px auto 0;
+}
+.read-more {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        width: 22px;
+        height: 15px;
+        background-image: url(../../assets/icons/arrow-readmore.svg);
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+}
+.read-more__link {
+    padding: 14px 30px 10px;
+
 }

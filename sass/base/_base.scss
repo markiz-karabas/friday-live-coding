@@ -33,6 +33,9 @@ a {
     color: $color-heading;
 }
 a:hover {
-    color: $color-primary-active;
+    color: $color-primary;
     @extend %transition;
+}
+.text-colored {
+    color: $color-primary;
 }
