@@ -6,7 +6,7 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.tariff-list__item, .price-card__text, .price-card__title, .start-business__text, .start-business__title, .footer__menu-link, .hero__text, .hero__title, .hero__btn-link, h1 {
+.dollar, .tarif-box__num, .tariff-list__item, .price-card__text, .price-card__title, .start-business__text, .start-business__title, .footer__menu-link, .hero__text, .hero__title, .hero__btn-link, h1 {
   font-family: "Poppins", sans-serif;
 }
 
@@ -379,6 +379,21 @@ a:hover {
   margin-bottom: 2.4rem;
 }
 
+.clients__wrapper {
+  padding: 80px 0 0;
+}
+
+.client-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  padding: 20px 0;
+}
+
+.client-box__item {
+  display: inline-block;
+}
+
 .strategies__wrapper {
   padding: 60px 0;
 }
@@ -545,7 +560,7 @@ a:hover {
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 40px 0 20px;
+  padding: 80px 0 40px;
 }
 
 .footer__menu {
@@ -574,6 +589,28 @@ a:hover {
   font-weight: 400;
   font-style: normal;
   color: #544837;
+}
+
+.logo-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  display: block;
+}
+
+.social-ico-box {
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-between;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
 }
 
 .start-business__wrapper {
@@ -663,6 +700,10 @@ a:hover {
 .tariff-box {
   display: block;
   height: 100px;
+  color: inherit;
+}
+.tariff-box--active {
+  color: #f4f4f4;
 }
 
 .tariff-list__item {
@@ -687,6 +728,39 @@ a:hover {
 .order-btn--active {
   color: #455A64;
   background-color: #f4f4f4;
+  border-color: #f4f4f4;
+}
+
+.tariff-box {
+  display: flex;
+  justify-content: center;
+  color: #544837;
+}
+
+.tarif-box__num {
+  color: #FFA800;
+  font-size: 7.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.tarif-box__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  color: inherit;
+}
+.tarif-box__text--active {
+  color: #f4f4f4;
+}
+
+.dollar {
+  font-size: 3.4rem;
+  line-height: 1.2;
+  font-weight: bold;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
